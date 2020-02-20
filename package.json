@@ -29,7 +29,8 @@
     "ignore": [
       "/lambdas/static-asset-uploader/build/**",
       "/dev-portal/public/apigateway-js-sdk/**",
-      "/dev-portal/node_modules/**"
+      "/dev-portal/node_modules/**",
+      "/lambdas/*/node_modules/**"
     ],
     "globals": [
       "test",
