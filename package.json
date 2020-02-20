@@ -19,17 +19,23 @@
     "fs-extra": "^7.0.1",
     "jest": "^24.9.0",
     "memorystream": "^0.3.1",
-    "prettier": "1.18.2",
+    "standard": "^14.3.1",
     "xml-js": "^1.6.8"
   },
   "dependencies": {
     "request-promise": "^4.2.4"
   },
-  "prettier": {
-    "trailingComma": "all",
-    "tabWidth": 2,
-    "semi": false,
-    "singleQuote": true,
-    "jsxSingleQuote": true
+  "standard": {
+    "ignore": [
+      "/lambdas/static-asset-uploader/build/**",
+      "/dev-portal/public/apigateway-js-sdk/**",
+      "/dev-portal/node_modules/**"
+    ],
+    "globals": [
+      "test",
+      "expect",
+      "beforeEach",
+      "afterEach"
+    ]
   }
 }
